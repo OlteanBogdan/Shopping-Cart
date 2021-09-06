@@ -1,0 +1,28 @@
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    h1 {
+        font-size: 48px;
+        font-family: $primary-font;
+        color: black;
+
+        @media screen and (max-width: 768px) {
+            font-size: 34px;
+        }
+    }
+
+    svg {
+        position: absolute;
+        right: 20px;
+        fill: black;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

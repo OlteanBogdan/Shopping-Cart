@@ -1,0 +1,224 @@
+/* Breakpoints
+=====================*/
+/* Colors
+=====================*/
+/* Fonts
+=====================*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap);
+.main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+.main-nav h1 {
+  font-size: 48px;
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav h1 {
+    font-size: 34px;
+  }
+}
+
+.main-nav svg {
+  position: absolute;
+  right: 20px;
+  fill: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p,
+a,
+li,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.products-listing .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products-listing .container .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  margin: 80px;
+  background-color: black;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.products-listing .container .product img {
+  width: 140px;
+  margin-bottom: 30px;
+}
+
+.products-listing .container .product h3 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.products-listing .container .product span {
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.products-listing .container .product .add-button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 6px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+}
+
+.products-listing .container .product .add-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.products-listing .container .product .qty-selector {
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 4px;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cart-modal {
+  width: 80%;
+  background-color: wheat;
+  margin-bottom: 0 auto;
+  z-index: 3;
+  position: fixed;
+  top: 80px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  border-radius: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .cart-modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    border-radius: 0;
+  }
+}
+
+.cart-modal h3 {
+  font-size: 36px;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-modal .close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+.cart-modal .close:hover {
+  color: white;
+}
+
+.cart-modal.display {
+  display: block;
+}
+
+.error {
+  color: #fb366e;
+  position: absolute;
+  right: 86px;
+  top: 26px;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: black;
+  border-radius: 10px;
+  padding: 8px 4px;
+  font-weight: 600;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.error::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-bottom: 22px solid black;
+  border-right: 22px solid black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: -1;
+  position: absolute;
+  right: -9.4px;
+}
+
+.total {
+  color: white;
+  font-size: 32px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=main.css.map */
